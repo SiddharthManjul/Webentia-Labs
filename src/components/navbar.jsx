@@ -32,7 +32,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex font-ubuntu">
+      <div className="flex font-ubuntu bg-beigelight">
         <ul className="hidden md:flex md:flex-col h-screen justify-center gap-y-8">
           {links.map(({ id, link }) => (
             <li
@@ -46,17 +46,17 @@ const Navbar = () => {
 
         <div
           onClick={() => setNav(!nav)}
-          className="cursor-pointer p-4 w-full z-10 text-white md:hidden"
+          className="cursor-pointer p-4 w-full z-10 text-beigelight md:hidden"
         >
           {nav ? (
             <FaTimes
               size={30}
-              className="animate-spin hover:rotate-90 w-16 h-16 p-2 border-2 rounded-full border-black bg-black"
+              className="animate-spin hover:rotate-90 w-16 h-16 p-2 border-2 rounded-full border-beige bg-gray-600 hover:bg-cyan-600 transition duration-300 text-beige"
             />
           ) : (
             <FaBars
               size={30}
-              className="w-16 h-16 p-2 border-2 rounded-full border-black bg-black hover:animate-spin"
+              className="w-16 h-16 p-2 border-2 rounded-full border-beigelight bg-gray-600 hover:animate-spin hover:bg-cyan-600 transition duration-300"
             />
           )}
         </div>
@@ -65,15 +65,15 @@ const Navbar = () => {
           <div
             className={
               nav
-                ? "flex flex-col justify-center items-left z-1000 absolute top-0 left-0 ease-in duration-300 w-full h-screen bg-white text-gray-500"
-                : "flex flex-col justify-center items-left z-1000 absolute top-0 left-[-100%] ease-in duration-300 w-full h-screen bg-white text-gray-500"
+                ? "flex flex-col justify-center items-left z-1000 absolute top-0 left-0 ease-in duration-300 w-full h-screen bg-beige text-gray-600"
+                : "flex flex-col justify-center items-left z-1000 absolute top-0 left-[-100%] ease-in duration-300 w-full h-screen bg-beige text-gray-600"
             }
           >
             <ul>
               {links.map(({ id, link }) => (
                 <li
                   key={id}
-                  className="px-4 cursor-pointer capitalize py-6 text-4xl hover:bg-gradient-to-r from-black to-gray-800 backdrop-blur-xl"
+                  className="px-4 cursor-pointer capitalize py-6 text-4xl hover:translate-x-2 hover:text-cyan-600 transition duration-300"
                 >
                   <Link onClick={() => setNav(!nav)} href={link}>
                     {link}

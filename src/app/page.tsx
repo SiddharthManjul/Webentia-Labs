@@ -1,9 +1,13 @@
 import Image from "next/image";
 
-export default function Home() {
+const Home = () => {
   return (
-    <div>
-      <p>HomePage</p>
+    <div className="bg-beigelight">
+      <div className="h-screen">
+        <h1 className="capitalize text-center">Webentia: decentralized web & home of nerds!</h1>
+      </div>
     </div>
   );
 }
+
+export default Home;
