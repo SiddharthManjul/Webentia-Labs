@@ -1,17 +1,27 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <div className="bg-beigelight font-josefinSans">
-
-      <div className="hidden h-screen md:block absolute z-100 inset-y-40 left-[22%] bg-beige rounded-t-xl">
+      <motion.div
+        className="hidden h-inherit md:block absolute z-100 inset-y-32 left-[22%] bg-beige rounded-xl shadow-lg shadow-gray-600 transform"
+        animate={{ x: 0, scale: 1 }}
+        initial={{ x: 100, scale: 0 }}
+        transition={{
+          ease: "linear",
+          duration: 0.8,
+          x: { duration: 1 },
+        }}
+      >
         <h1 className="capitalize mt-4 px-4 text-center text-4xl text-gray-600">
           Webentia: decentralized web & home of nerds!
         </h1>
-      </div>
+      </motion.div>
 
-      <div className="">
-      <h1 className="capitalize text-center md:hidden">
+      <div className="md:hidden">
+        <h1 className="capitalize text-center h-screen">
           Webentia: decentralized web & home of nerds!
         </h1>
       </div>

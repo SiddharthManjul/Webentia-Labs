@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     <>
       <div className="flex font-ubuntu bg-beigelight">
-        <ul className="hidden md:flex md:flex-col h-screen justify-center gap-y-8 relative z-10">
+        <ul className="hidden md:flex md:flex-col ml-2 h-screen justify-center gap-y-8 relative z-10">
           {links.map(({ id, link }) => (
             <li
               key={id}
