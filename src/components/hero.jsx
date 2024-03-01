@@ -16,7 +16,7 @@ const Hero = () => {
         }}
       >
         <h1 className="capitalize mt-4 px-4 text-center text-4xl text-gray-600">
-          Webentia: decentralized web & home of nerds!
+          Webentia Labs: Researchers & Developers Community!
         </h1>
       </motion.div>
 
@@ -30,14 +30,14 @@ const Hero = () => {
           x: { duration: 1 },
         }}
       >
-        <h1 className="capitalize mt-4 px-4 text-center text-4xl text-gray-600">
-          Webentia: decentralized web & home of nerds!
+        <h1 className="capitalize mt-6 underline px-4 text-center text-5xl text-gray-600">
+          Webentia Labs: Researchers & Developers Community!
         </h1>
       </motion.div>
 
       <div className="md:hidden">
         <h1 className="capitalize text-center h-screen">
-          Webentia: decentralized web & home of nerds!
+          Webentia Labs: Researchers & Developers Community!
         </h1>
       </div>
     </div>
