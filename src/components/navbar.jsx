@@ -33,11 +33,22 @@ const Navbar = () => {
   return (
     <>
       <div className="flex font-ubuntu bg-beigelight">
-        <ul className="hidden md:flex md:flex-col ml-2 h-screen justify-center gap-y-8 relative z-10">
+        <ul className="hidden md:flex md:flex-col xl:hidden ml-2 h-screen justify-center gap-y-8 relative z-10">
           {links.map(({ id, link }) => (
             <li
               key={id}
               className="uppercase text-xl text-gray-600 hover:translate-x-4 hover:text-cyan-600 hover:translate-y-2 hover:scale-125 transition duration-300"
+            >
+              <Link href={link}>{link}</Link>
+            </li>
+          ))}
+        </ul>
+
+        <ul className="hidden xl:flex xl:flex-col ml-4 h-screen justify-center gap-y-12 relative z-10">
+          {links.map(({ id, link }) => (
+            <li
+              key={id}
+              className="uppercase text-3xl text-gray-600 hover:translate-x-4 hover:text-cyan-600 hover:translate-y-2 hover:scale-125 transition duration-300"
             >
               <Link href={link}>{link}</Link>
             </li>
