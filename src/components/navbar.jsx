@@ -37,7 +37,7 @@ const Navbar = () => {
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className="uppercase text-xl text-gray-600 hover:translate-x-4 hover:text-cyan-600 hover:translate-y-2 hover:scale-125 transition duration-300"
+              className="uppercase text-xl text-gray-600 bg-beige rounded-xl shadow-lg shadow-gray-600 p-4 border-[4px] border-gray-600 hover:translate-x-4 hover:text-cyan-600 hover:border-cyan-600 hover:translate-y-2 hover:scale-125 transition duration-300"
             >
               <Link href={link}>{link}</Link>
             </li>
@@ -48,7 +48,7 @@ const Navbar = () => {
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className="uppercase text-3xl text-gray-600 hover:translate-x-4 hover:text-cyan-600 hover:translate-y-2 hover:scale-125 transition duration-300"
+              className="uppercase text-3xl text-gray-600 bg-beige rounded-xl shadow-lg shadow-gray-600 p-4 border-[4px] border-gray-600 hover:translate-x-4 hover:text-cyan-600 hover:border-cyan-600 hover:translate-y-2 hover:scale-125 transition duration-300"
             >
               <Link href={link}>{link}</Link>
             </li>
