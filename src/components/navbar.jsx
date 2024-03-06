@@ -33,12 +33,12 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex font-ubuntu bg-gradient-to-br from-tealdark via-teallight via-fleshlight via-50% to-fleshdark h-screen">
+      <div className="flex font-ubuntu bg-gradient-to-br from-tealdark via-teallight via-teal-100 via-fleshlight via-50% to-fleshdark">
         <ul className="hidden md:flex md:flex-col xl:hidden ml-2 h-screen justify-center gap-y-8 relative z-10">
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className="uppercase text-xl text-gray-600 bg-beige rounded-xl shadow-lg shadow-gray-600 p-4 border-[4px] border-gray-600 hover:translate-x-4 hover:text-cyan-600 hover:border-cyan-600 hover:translate-y-2 hover:scale-125 transition duration-300"
+              className="uppercase text-xl text-gray-600 hover:translate-x-4 hover:text-cyan-600 hover:border-cyan-600 hover:translate-y-2 hover:scale-125 transition duration-300"
             >
               <Link href={link}>{link}</Link>
             </li>
@@ -49,7 +49,7 @@ const Navbar = () => {
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className="uppercase text-3xl text-gray-600 bg-beige rounded-xl shadow-lg shadow-gray-600 p-4 border-[4px] border-gray-600 hover:translate-x-4 hover:text-cyan-600 hover:border-cyan-600 hover:translate-y-2 hover:scale-125 transition duration-300"
+              className="uppercase text-3xl text-gray-600 hover:translate-x-4 hover:text-cyan-600 hover:border-cyan-600 hover:translate-y-2 hover:scale-125 transition duration-300"
             >
               <Link href={link}>{link}</Link>
             </li>
@@ -58,12 +58,12 @@ const Navbar = () => {
 
         <div
           onClick={() => setNav(!nav)}
-          className="cursor-pointer p-4 w-full z-10 text-beigelight md:hidden pb-12 pl-8 pt-8"
+          className="cursor-pointer p-4 w-full z-10 text-beigelight md:hidden pl-8 pt-8 absolute"
         >
           {nav ? (
             <FaTimes
               size={30}
-              className="animate-spin hover:rotate-90 w-16 h-16 p-2 border-2 rounded-full border-beige bg-gray-600 hover:bg-cyan-600 transition duration-300 text-beige"
+              className="animate-spin hover:rotate-90 w-16 h-16 p-2 border-2 rounded-full border-beige bg-gray-600 hover:bg-cyan-600 transition duration-300 text-inherit"
             />
           ) : (
             <FaBars
@@ -72,27 +72,13 @@ const Navbar = () => {
             />
           )}
         </div>
-        <motion.div
-              className="md:hidden py-16 px-8 absolute top-[20%]" 
-              animate={{ x: 0, scale: 1 }}
-              initial={{ x: 0, scale: 0 }}
-              transition={{
-                ease: "linear",
-                duration: 0.5,
-                x: { duration: 0.5 },
-              }}
-            >
-              <h1 className="capitalize text-center font-josefinSans h-inherit text-7xl text-gray-600">
-                Webentia Labs: Researchers & Developers Community!
-              </h1>
-            </motion.div>
 
         {nav && (
           <div
             className={
               nav
-                ? "flex flex-col justify-center items-left z-1000 absolute top-0 left-0 ease-in duration-300 w-full h-screen bg-beige text-gray-600"
-                : "flex flex-col justify-center items-left z-1000 absolute top-0 left-[-100%] ease-in duration-300 w-full h-screen bg-beige text-gray-600"
+                ? "flex flex-col justify-center items-left z-1000 absolute top-0 left-0 ease-in duration-300 w-full h-screen bg-gradient-to-tr from-tealdark via-teallight via-teal-100 via-fleshlight via-50% to-fleshdark text-gray-600"
+                : "flex flex-col justify-center items-left z-1000 absolute top-0 left-[-100%] ease-in duration-300 w-full h-screen bg-gradient-to-tr from-tealdark via-teallight via-teal-100 via-fleshlight via-50% to-fleshdark text-gray-600"
             }
           >
             

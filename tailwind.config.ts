@@ -31,6 +31,7 @@ const config: Config = {
     fontFamily: {
       josefinSans: ["Josefin Sans", "sans-serif"],
       ubuntu: ["Ubuntu", "sans-serif"],
+      spaceGrotesk: ["Space Grotesk", "sans-serif"],
     },
   },
   plugins: [],
