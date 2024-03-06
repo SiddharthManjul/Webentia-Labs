@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -32,7 +33,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex font-ubuntu bg-beigelight">
+      <div className="flex font-ubuntu bg-gradient-to-br from-tealdark via-teallight via-fleshlight via-50% to-fleshdark h-screen">
         <ul className="hidden md:flex md:flex-col xl:hidden ml-2 h-screen justify-center gap-y-8 relative z-10">
           {links.map(({ id, link }) => (
             <li
@@ -57,7 +58,7 @@ const Navbar = () => {
 
         <div
           onClick={() => setNav(!nav)}
-          className="cursor-pointer p-4 w-full z-10 text-beigelight md:hidden"
+          className="cursor-pointer p-4 w-full z-10 text-beigelight md:hidden pb-12 pl-8 pt-8"
         >
           {nav ? (
             <FaTimes
@@ -71,6 +72,20 @@ const Navbar = () => {
             />
           )}
         </div>
+        <motion.div
+              className="md:hidden py-16 px-8 absolute top-[20%]" 
+              animate={{ x: 0, scale: 1 }}
+              initial={{ x: 0, scale: 0 }}
+              transition={{
+                ease: "linear",
+                duration: 0.5,
+                x: { duration: 0.5 },
+              }}
+            >
+              <h1 className="capitalize text-center font-josefinSans h-inherit text-7xl text-gray-600">
+                Webentia Labs: Researchers & Developers Community!
+              </h1>
+            </motion.div>
 
         {nav && (
           <div
@@ -80,11 +95,12 @@ const Navbar = () => {
                 : "flex flex-col justify-center items-left z-1000 absolute top-0 left-[-100%] ease-in duration-300 w-full h-screen bg-beige text-gray-600"
             }
           >
+            
             <ul>
               {links.map(({ id, link }) => (
                 <li
                   key={id}
-                  className="px-4 cursor-pointer uppercase py-6 text-4xl hover:translate-x-2 hover:text-cyan-600 transition duration-300"
+                  className="px-4 pl-8 cursor-pointer uppercase py-6 text-4xl hover:translate-x-2 hover:text-cyan-600 transition duration-300"
                 >
                   <Link onClick={() => setNav(!nav)} href={link}>
                     {link}

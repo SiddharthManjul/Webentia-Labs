@@ -22,6 +22,10 @@ const config: Config = {
       colors: {
         beige: "#FCD59B",
         beigelight: "#FFF1DC",
+        teallight: "#C1ECE4",
+        fleshlight: "#FFD0D0",
+        tealdark: "#05BFDB",
+        fleshdark: "#FF9EAA",
       },
     },
     fontFamily: {
