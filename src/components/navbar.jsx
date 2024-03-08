@@ -58,7 +58,7 @@ const Navbar = () => {
 
         <div
           onClick={() => setNav(!nav)}
-          className="cursor-pointer p-4 w-full z-10 text-beigelight md:hidden pl-8 pt-8 absolute"
+          className="cursor-pointer p-4 z-10 text-beigelight md:hidden pl-8 pt-8 absolute"
         >
           {nav ? (
             <FaTimes
