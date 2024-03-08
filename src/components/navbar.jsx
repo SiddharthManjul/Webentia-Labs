@@ -38,7 +38,7 @@ const Navbar = () => {
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className="uppercase text-xl text-gray-600 hover:translate-x-4 hover:text-cyan-600 hover:border-cyan-600 hover:translate-y-2 hover:scale-125 transition duration-300"
+              className="uppercase text-2xl text-gray-600 hover:translate-x-4 hover:text-cyan-600 hover:border-cyan-600 hover:translate-y-2 hover:scale-125 transition duration-300"
             >
               <Link href={link}>{link}</Link>
             </li>
@@ -77,12 +77,12 @@ const Navbar = () => {
           <div
             className={
               nav
-                ? "flex flex-col justify-center items-left z-1000 absolute top-0 left-0 ease-in duration-300 w-full h-screen bg-gradient-to-tr from-tealdark via-teallight via-teal-100 via-fleshlight via-50% to-fleshdark text-gray-600"
-                : "flex flex-col justify-center items-left z-1000 absolute top-0 left-[-100%] ease-in duration-300 w-full h-screen bg-gradient-to-tr from-tealdark via-teallight via-teal-100 via-fleshlight via-50% to-fleshdark text-gray-600"
+                ? "flex flex-col justify-center items-left absolute top-0 left-0 ease-in duration-300 w-full h-screen bg-gradient-to-tr from-tealdark via-teallight via-teal-100 via-fleshlight via-50% to-fleshdark text-gray-600"
+                : "flex flex-col justify-center items-left top-0 left-[-100%] ease-in duration-300 w-full h-screen bg-gradient-to-tr from-tealdark via-teallight via-teal-100 via-fleshlight via-50% to-fleshdark text-gray-600"
             }
           >
             
-            <ul>
+            <ul className="">
               {links.map(({ id, link }) => (
                 <li
                   key={id}
