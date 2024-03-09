@@ -23,11 +23,7 @@ const Hero = () => {
       </div>
 
       <div className="md:hidden pt-10 h-inherit w-full absolute">
-        <a href="/" className="cursor-pointer">
-          <h1 className="capitalize text-end h-inherit text-5xl mr-8 mt-0 text-black hover:text-[#982176] transition duration-300">
-            Webentia Labs
-          </h1>
-        </a>
+        
       </div>
     </div>
   );

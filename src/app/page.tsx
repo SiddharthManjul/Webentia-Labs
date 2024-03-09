@@ -52,7 +52,7 @@ const Home = () => {
         </div>
       </motion.div>
       <motion.div
-        className="md:hidden w-full h-screen pt-[25%] transform absolute -z-10 bg-gradient-to-br from-tealdark via-teallight via-teal-100 via-fleshlight via-50% to-fleshdark"
+        className="md:hidden w-full h-screen pt-[25%] transform bg-gradient-to-br from-tealdark via-teallight via-50% to-fleshdark"
         animate={{ x: 0, scale: 1 }}
         initial={{ x: 0, scale: 0 }}
         transition={{
@@ -72,6 +72,7 @@ const Home = () => {
           <NavBtn />
         </div>
       </motion.div>
+      <h1>sdkijbfciousdbf</h1>
     </div>
   );
 };
