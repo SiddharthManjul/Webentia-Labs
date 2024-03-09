@@ -4,9 +4,12 @@ import { GoArrowRight } from "react-icons/go";
 const NavBtn = () => {
   return (
     <>
-      <div className="flex flex-row capitalize gap-x-4 text-4xl font-ubuntu animate-bounce justify-end px-6">
-        <a href="/about"><h1>know more</h1></a>
-        <GoArrowRight />
+      <div className="flex capitalize text-4xl font-ubuntu justify-end px-6 font-normal w-inherit">
+        <a href="/about">
+          <h1 className="hover:animate-bounce flex flex-row gap-x-4">
+            know more <GoArrowRight />
+          </h1>
+        </a>
       </div>
     </>
   );

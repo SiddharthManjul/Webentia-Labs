@@ -26,6 +26,7 @@ const config: Config = {
         fleshlight: "#FFD0D0",
         tealdark: "#05BFDB",
         fleshdark: "#FF9EAA",
+        maroonpurple: "#982176",
       },
     },
     fontFamily: {
