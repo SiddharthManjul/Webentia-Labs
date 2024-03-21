@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Hero from "@/components/hero";
 import NavBtn from "@/components/navBtn";
 
-const Home = () => {
+const AboutHero = () => {
   return (
     <div>
       <Hero />
@@ -20,11 +20,10 @@ const Home = () => {
         }}
       >
         <p className="font-spaceGrotesk text-6xl text-end px-6 mt-36 leading-relaxed font-bold">
-          Envisioning D-Web R&D Paradigms!
+          About the Paradigm!
         </p>
         <p className="font-spaceGrotesk text-2xl text-end px-6 mt-2 leading-relaxed">
-          Building & Empowering next-gen solutions to make D-Web truly
-          Decentralized.
+          Who are we? What is Webentia Labs?
         </p>
         <div className="mt-24 text-end">
           <NavBtn />
@@ -41,11 +40,10 @@ const Home = () => {
         }}
       >
         <p className=" font-spaceGrotesk text-5xl text-end px-6 mt-36 leading-relaxed font-bold">
-          Envisioning D-Web R&D Paradigms!
+          About the Paradigm!
         </p>
         <p className="font-spaceGrotesk text-2xl text-end px-6 mt-2 leading-relaxed">
-          Building & Empowering next-gen solutions to make D-Web truly
-          Decentralized.
+          Who are we? What is Webentia Labs?
         </p>
         <div className="mt-24">
           <NavBtn />
@@ -55,11 +53,10 @@ const Home = () => {
         className="md:hidden w-full h-screen pt-[25%] transform bg-gradient-to-br from-tealdark via-teallight via-50% to-fleshdark"
       >
         <p className="font-spaceGrotesk text-4xl text-center px-6 mt-16 leading-relaxed font-bold">
-          Envisioning D-Web R&D Paradigms!
+          Know the Paradigm!
         </p>
         <p className="font-spaceGrotesk text-2xl text-center px-6 mt-2 leading-relaxed">
-          Building & Empowering next-gen solutions to make D-Web truly
-          Decentralized.
+          Who are we? What is Webentia Labs?
         </p>
         <div className="mt-10">
           <NavBtn />
@@ -70,4 +67,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default AboutHero;
